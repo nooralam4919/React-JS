@@ -13,8 +13,21 @@ let [counter,setCounter] = useState(15)
 //  let counter = 5;
 
  const addValue = () => {
-  counter = counter + 1;
-  setCounter(counter)
+  // counter = counter + 1;
+  setCounter(counter+1)
+
+  // what will be the output
+    // it will not change output increment by 1
+  // setCounter(counter+1)
+  // setCounter(counter+1)
+  // setCounter(counter+1)
+  // setCounter(counter+1)
+
+  // to increment more we used to use the functiono useState
+  setCounter((prevCounter) => prevCounter+1 )
+  setCounter((prevCounter) => prevCounter+1 )
+  setCounter((prevCounter) => prevCounter+1 )
+  setCounter((prevCounter) => prevCounter+1 )
  }
 
  const removeValue = () => {
